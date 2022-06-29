@@ -15,6 +15,7 @@ const winConditions = [
 
 
 const showScore = () => {
+    scoreView.classList.toggle("active");
   const playButton = document.getElementById("play-button");
   playButton.addEventListener("click", () => {
     scoreView.classList.toggle("active");
@@ -89,7 +90,6 @@ const setBoardEvents = () => {
 };
 
 const main = () => {
-  scoreView.classList.toggle("active");
   showScore();
   setBoardEvents();
 };

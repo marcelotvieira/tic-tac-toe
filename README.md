@@ -10,6 +10,6 @@ Possui um placar para contagem de vitórias.
 
 O Board é dinâmico.
 
-<img src="/src/images/win.png">
+<img src="/src/images/pwin.png">
 
-<img src="/src/images/win.png">
+<img src="/src/images/tie.png">

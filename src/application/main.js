@@ -79,12 +79,14 @@ const setBoardEvents = () => {
   let currentPlayer = true;
   for (let box of boxes) {
     box.addEventListener("click", function setSymbol() {
+      if (box.className == 'box') {
       currentPlayer == true
         ? box.classList.add("circle")
         : box.classList.add("x");
       currentPlayer = togglePlayer(currentPlayer);
       !checkWin(box) ? checkTie() : null;
       setWin(checkWin(box));
+      }
     });
   }
 };
